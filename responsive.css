@@ -1,0 +1,96 @@
+
+@media (max-width: 480px) {
+  
+.header {
+    padding: 10px 0;
+    z-index: 1000;               /* keep header above content */
+  }
+  .nav-links {
+    display: none; /* hidden by default */
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* below header */
+    right: 0;
+    width: 200px;
+    padding: 10px;
+    z-index: 1000;
+  }
+
+  .nav-links.show {
+    display: flex; /* show when toggled */
+  }
+.fa-bars {
+    display: block; 
+  }
+
+  .nav-links a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+  }
+  
+
+  /* Hero */
+  #hero, .hero-container { height: 70vh; }
+  .hero-content h2 { font-size: 1.6rem; margin-top: 10rem; }
+  .hero-content p { font-size: 1rem; padding: 0 8px; }
+  #hero-buttons { flex-direction: column; gap: 10px; padding: 0 2rem; }
+  .viewmenu-btn, .makereservation-btn { width: 100%; max-width: 320px; }
+
+  /* Menu */
+  .menu-category h3{
+    font-size: 1.3rem;
+    margin-top: 1rem;
+  }
+  .menu { padding: 2.5rem 0; }
+  .menu-title { font-size: 2rem; }
+  .menu-info { font-size: 1rem; padding: 0 8px; }
+  .menu-items { grid-template-columns: 1fr; padding: 1rem 0; }
+  .menu-item { flex-direction: column;  }
+  .menu-item-info h5 { font-size: 1.05rem; }
+  .menu-item-info p { font-size: .9rem; line-height: 1.4rem; } 
+  .price { margin-top: 0; }
+
+  /* About */
+  .about-title{
+    font-size: 2rem;
+  
+  }
+    .about-info h4{
+      font-size: 1.4rem;
+    }
+  .about { display: grid; grid-template-columns: 1fr; }
+  .about-info { padding:1rem; }
+  img { width: 100%; max-width: 100%; height: auto; }    
+
+  /* Contact */
+  .container h4 { font-size: 2rem; margin-top: 2rem; margin-bottom: 1rem; }
+  .contact-content { grid-template-columns: 1fr; gap: 1.25rem; }
+  .give-info input,
+  .give-info select,
+  .give-info textarea { width: 100%; }                 
+
+  /* Footer */
+  .footer-section {
+    height: auto;        
+    padding-bottom: 1rem;
+  }
+  .container-content {
+    display: grid;
+    gap: 1rem;
+
+  }
+  .footer-bottom { margin-top: 1.25rem; font-size: 1rem; }
+}
+
+
+@media (min-width: 481px) {
+  .fa-bars {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex; /* normal navbar links */
+    gap: 20px;
+  }
+}

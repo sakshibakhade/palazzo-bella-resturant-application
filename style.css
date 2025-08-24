@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: rgb(56, 55, 55);
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+:root{
+    --primary-color:rgb(190, 145, 61);
+    --secondary-color:rgb(99, 187, 255) ;
+    --accent-color:white;
+}
+.header{
+    background-color:var(--primary-color);
+    /* color: white; */
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index:0;
+}
+section {
+  scroll-margin-top: 100px;  /* prevents heading from hiding under navbar */
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1{
+    font-size:2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+    color: #212121;
+}
+.logo .tagline{
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap:2em;
+    background-color:var(--primary-color) ;
+    
+}
+
+.nav-links a{
+    color:white;
+    font-weight: bold;
+    font-size:1.2rem;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+.nav-links a:hover{
+    background-color: rgb(93, 93, 93);
+}
+
+ #hero {
+    height: 100vh;
+    background: linear-gradient(rgba(29, 28, 28, 0.5), rgba(17, 16, 16, 0.5)), url('images/resturant.jpg');
+    background-size: cover;
+    background-position: center;    
+}
+
+.hero-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    height: 100vh;
+}
+.hero-content h2{
+    font-size:3.0rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    letter-spacing:0.1rem;
+}
+.hero-content p{
+    font-size: 1.2rem;
+    font-weight: 100;
+    max-width: 600px;
+}
+#hero-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 15px;
+
+}
+.viewmenu-btn,
+.makereservation-btn {
+    padding: 10px 20px;
+    background-color:orange;
+    color:rgb(26, 25, 25);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.viewmenu-btn:hover,
+.makereservation-btn:hover {
+    background-color: rgb(169, 165, 165);
+}
+
+.menu{
+    padding: 5rem 0;
+    background-color: var(--accent-color);
+
+}
+.menu-title{
+    text-align: center;
+    font-size: 2.8rem;
+    color:var(--primary-color) ;
+    /* margin-bottom:0.1rem ; */
+
+}
+.menu-info{
+    text-align: center;
+    font-size: 1.3rem;
+    /* margin-bottom: 0.1rem; */
+    color: #434448;
+    max-width:1400px;
+}
+.menu-category h3{
+    /* padding: 0.6rem 0; */
+    font-size: 2rem;
+    font-weight: bold;
+    color:var(--primary-color);
+    border-bottom:2px solid orange;
+}
+.menu-item{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem ;
+    align-items: flex-start;
+    /* border: 2px solid black; */
+    box-shadow: 0 2px 10px var(--primary-color);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.menu-item:hover{
+    transform: translateY(2px);
+}
+.menu-items{
+    display: grid;
+    gap:2.1rem;
+     padding: 3rem 1rem;
+
+}
+.menu-item-info h5{
+    font-size: 1.2rem;
+        margin-top: 0.5rem;
+
+}
+.menu-item-info p{
+    font-size: 0,3rem;
+    line-height: 1rem;
+    margin-top: 0.5rem;
+}
+.price{
+    margin-top: 1.7rem;
+    color: coral;
+    font-size: larger;
+    font-weight: bold;
+}
+.about-section{
+        background-color:var(--accent-color);
+        scroll-margin-top:170px ;
+
+}
+.about-title{
+    display: flex;
+    justify-content: center;
+    font-size:2.3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color:var(--primary-color);
+}
+.about{
+    display: grid;
+    grid-template-columns:1fr 1fr ;
+}
+.about-info{
+    padding: 2rem 6rem;
+   
+    
+}
+.about-info h4{
+    font-size: 2.2rem;
+    font-weight:bold;
+    color:var(--primary-color);
+    padding: 0 1rem;
+}
+.about-info p {
+    /* max-width: 900px; */
+    padding: 1rem 1rem;
+    line-height: 1.6rem;
+    
+}
+img{
+    height: 400px;
+    width: 650px;
+    border-radius: 15px;
+    box-shadow: 0 4px 5px black;
+
+} 
+
+.contact-section{
+    padding: 2rem 0;
+        background-color:var(--accent-color);
+}
+    
+
+.container h4{
+    font-size: 2.8rem;
+    display: flex;
+    justify-content: center;
+    color: var(--primary-color);
+    margin-top:5rem;
+    margin-bottom: 2rem;
+}
+.contact-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+.contact-item{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    
+}
+.contact-item strong{
+    color:var(--primary-color);
+    font-weight: bold;
+    
+}
+.contact-item p{
+    padding: 0.7rem 0;
+}
+.sub-title{
+    font-size:1.4rem;
+    color: var(--primary-color);
+}
+.details-title{
+    font-size:1.4rem;
+    color: var(--primary-color);
+}
+.give-info{
+    padding: 0.8rem 0;
+    font-weight: bold;
+        color: var(--primary-color);
+
+}
+
+.give-info label{
+    display: block;
+    margin-bottom: 0.5rem;
+}
+.give-info input,
+.give-info select,
+.give-info textarea
+{
+    width: 380px;
+    padding: 0.6rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 2px solid rgb(135, 135, 135);
+    transition:border-color 0.3s ease;
+} 
+.give-info input:focus,
+.give-info select:focus,
+.give-info textarea:focus{ 
+    outline: none;
+    border-color:var(--secondary-color);
+
+}
+
+ .btn{
+    font-weight: bold;
+    padding: 0.6rem;
+    border-radius: 4px;
+    background-color:var(--secondary-color) ;
+    margin-top: 1rem;
+    transition:transform 0.3s ease;   
+}
+.btn:hover{
+    transform: translateY(-3px);
+}
+
+.footer-section{
+    padding: 0.3rem;
+    background-color: var(--primary-color);
+    color: white;
+    height: 450px;
+    
+}
+.container-content{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+}
+.info-of-bella{
+    max-width: 200px;
+}
+.palazzobella h4{
+    margin-bottom:0.7rem;
+}
+.quicklinks ul{
+    list-style: none;
+}
+.quick-links h4{
+    margin-bottom:0.7rem;
+}
+.opening h4{
+margin-bottom: 0.7rem;
+}
+.links-of-bella h4{
+margin-bottom: 0.7rem;
+}
+button{
+    padding: 0.3rem 1rem;
+    margin-top: 0.6rem;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: backgroundcolor 0.3s ease;
+}
+button:hover{
+    background-color:var(--secondary-color);
+}
+button i{
+    padding: 0 0.5rem;
+}
+.footer-bottom{
+    border-top:1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    margin-top:10rem;
+    padding: 1rem 0;
+}
