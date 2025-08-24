@@ -15,8 +15,8 @@ Contact Section – Provides essential restaurant details so users can easily co
 
 -Technologies Used
 
-HTML5 – For structuring the content
+HTML5 – For structuring the content.
 
-CSS3 – For styling and responsiveness
+CSS3 – For styling and responsiveness.
 
-JavaScript – For interactivity and dynamic behavior
+JavaScript – For interactivity and dynamic behavior.
